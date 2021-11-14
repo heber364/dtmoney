@@ -10,29 +10,29 @@ createServer({
 
   },
 
-  seeds(server){
-    server.db.loadData({
-      transactions:[
-        {
-          id:1,
-          title: 'FreeLance de website',
-          type:'deposit',
-          category:'Dev',
-          amount:6000,
-          createAt: new Date('2021-02-12 09:00:00')
-        },
-        {
-          id:2,
-          title: 'Aluguel',
-          type:'whithdraw',
-          category:'Casa',
-          amount:800,
-          createAt: new Date('2021-02-14 011:00:00')
-        }
+  // seeds(server){
+  //   server.db.loadData({
+  //     transactions:[
+  //       {
+  //         id:1,
+  //         title: 'FreeLance de website',
+  //         type:'deposit',
+  //         category:'Dev',
+  //         amount:6000,
+  //         createAt: new Date('2021-02-12 09:00:00')
+  //       },
+  //       {
+  //         id:2,
+  //         title: 'Aluguel',
+  //         type:'withdraw',
+  //         category:'Casa',
+  //         amount:800,
+  //         createAt: new Date('2021-02-14 011:00:00')
+  //       }
         
-      ],
-    })
-  },
+  //     ],
+  //   })
+  // },
 
   routes(){
     this.namespace = 'api';
